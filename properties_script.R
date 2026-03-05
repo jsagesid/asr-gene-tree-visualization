@@ -18,11 +18,11 @@ if (length(to_install_bioc)) BiocManager::install(to_install_bioc, ask = FALSE, 
 
 invisible(lapply(c(pkgs_cran, pkgs_bioc), library, character.only = TRUE))
 
-setwd("/Users/jenisage/Desktop/chap3_milk/evolution/alignments_trees_january")
-fasta_file <- "PLIN2_reconstructed.fasta"
-mf_file    <- "/Users/jenisage/Desktop/chap3_milk/evolution/properties/MF_percent.csv"
-out_dir    <- "/Users/jenisage/Desktop/chap3_milk/evolution/properties/Properties_Tables/with_leopard_seal"
-gene_name  <- "PLIN2_extra"
+setwd("/path/to/directory")
+fasta_file <- "BTN1A1_reconstructed.fasta"
+mf_file    <- "/path/to/MF_percent.csv"
+out_dir    <- "/path/to/outdir"
+gene_name  <- "BTN1A1"
 
 # Extracellular region on the *gapped* alignment (1-based, inclusive)
 #extra_cols <- c(72, 292) # for BTN1A1; change as needed
