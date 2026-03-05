@@ -13,15 +13,15 @@ suppressPackageStartupMessages({
 # =============================
 # 1) Load inputs
 # =============================
-setwd("/Users/jenisage/Desktop/chap3_milk/evolution/ASR_MCMC_MFGM/BTN1A1/extra_mcmc_input/results")
+setwd("/path/to/wd")
 
-tree <- read.tree("BTN1A1_extra_dated_tree.txt")
+tree <- read.tree("BTN1A1_dated_tree.txt")
 
 anc_seqs <- readAAStringSet(
-  "/Users/jenisage/Desktop/chap3_milk/evolution/alignments_trees_january/BTN1A1_extra_reconstructed.fasta"
+  "/path/to/BTN1A1_reconstructed.fasta"
 )
 
-traits_file <- "/Users/jenisage/Desktop/chap3_milk/evolution/properties/Properties_Tables/with_leopard_seal/BTN1A1_extra_properties.csv"
+traits_file <- "/path/to/BTN1A1_properties.csv"
 has_traits <- file.exists(traits_file)
 if (has_traits) traits <- read.csv(traits_file, stringsAsFactors = FALSE)
 
